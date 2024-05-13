@@ -1,0 +1,29 @@
+.project_section{
+    padding: 0 6rem;
+    margin-top: 6.5rem;
+    padding-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.project_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 890px) {
+    .project_section{
+        padding: 0 1rem;
+    }
+    .project_box{
+        flex-direction: column;
+    }
+    .project_box Box{
+        width: auto;
+    }
+}
+@media only screen and (min-width: 890px) and (max-width: 1160px) {
+    .project_section{
+        padding: 0 0;
+    }
+}

@@ -1,0 +1,72 @@
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 60px;
+    margin: 3% auto;
+    background: transparent;
+    padding: 0 1rem;
+    border: 1px solid #f0ecec;
+    border-radius: 5rem;
+    backdrop-filter: blur(20px) saturate(1.7);
+    background: hsla(45, 17%, 95%, .8);
+    outline: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    z-index: 500; /* Set an appropriate value based on your layout */
+}
+
+/* Rest of your styles... */
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 0.2rem;
+    padding: 0 1.5rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.active {
+    background-color: rgb(198, 204, 206);
+    border: 2px;
+    border-radius: 15px;
+    width: 90%;
+    height: 30px;
+    opacity: 5px;
+    transition: all 0.2s ease-in;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        width: fit-content; 
+        margin: 4% auto;
+    }
+
+    .navbar li {
+        padding: 0 0.5rem; 
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar {
+        width: fit-content;
+        margin: 4% auto;
+    }
+
+    .navbar li {
+        padding: 0 1rem; 
+    }
+}

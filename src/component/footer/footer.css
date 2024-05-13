@@ -1,0 +1,98 @@
+a:hover{
+    color: #245810;
+  }
+  
+  
+  .footer {
+      width: 100%;
+      height: max-content;
+      margin-top: 10rem;
+      margin-bottom: 1rem;
+      
+    }
+    
+    .fholder {
+      display: flex;
+      height: max-content;
+      padding: 4rem 0;
+      
+      
+    }
+    
+    .box1 {
+      border: 1px solid #245810;
+      display: flex;
+      width: fit-content;
+      height:5rem;
+      padding: 0.5rem 3rem 0.5rem 2rem;
+      margin: 4.5rem 6rem;
+      letter-spacing: 1px;
+      backdrop-filter: blur(5px);
+      background-color: #EBF3E8;
+      border: 0.3rem solid transparent;
+      border-radius: 4rem;
+      transition: border-radius 0.3s, border-color 0.3s;
+  
+  
+    }
+
+  
+    .box1:hover {
+      border-radius: 2rem;
+      border-color: rgba(187, 218, 203, 0.737);
+    }
+    
+    .box2 {
+     margin-top: 3.5rem;
+     margin-bottom: 3.5rem;
+     margin-left: 25%;
+      /* padd border: 1px solid #245810;ing-left: 20rem; */ /* Consider using margin-left instead */
+      
+    }
+    
+    .box2 li {
+      list-style: none;
+      font-size: 19px;
+      margin: 20px 0;
+      letter-spacing: 0.5px;
+    }
+  
+    @media screen and (max-width: 550px)  {
+      .fholder{
+        width:100%;
+        padding: 3rem 0.5rem;
+        flex-direction: column;
+      }
+      .box1{
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+      .box1,.box2{
+        margin: 1rem 1rem;
+        
+      }
+      
+  }
+  
+  @media screen and (min-width: 552px) and (max-width: 1024px) {
+    .fholder{
+      width:100%;
+      padding: 3rem 5rem;
+      
+    }
+    .box1{
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+    .box1,.box2{
+      margin: 1rem 1rem;
+      
+    }
+    .box2{
+      margin-left: 3rem;
+      margin-top: -0.4rem;
+     
+    }
+    
+  }
+    

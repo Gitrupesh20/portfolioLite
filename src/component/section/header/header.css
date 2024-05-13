@@ -1,0 +1,99 @@
+.outter_box {
+    margin-top: var(--marginTop);
+    height: 100%;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 4rem;
+    width: 100%;
+    height: 500px;
+}
+.caption {
+    margin-right: 3rem;
+}
+.caption h2{
+    font-size: 3.2rem;
+}
+.shape {
+    animation: morph 8s ease-in-out infinite;
+    height: 350px;
+    transition: all 1s ease-in-out;
+    z-index: 5;
+    overflow: hidden;
+}
+.shape img{
+    height: 500px;
+}
+.tech_stack {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    align-items: center;
+    font-size: 24px;
+    justify-content: space-evenly;
+    width: 50%;
+}
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        border: 5px solid rgba(18, 19, 18, 0.723);
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        border: 5px solid rgba(21, 22, 21, 0.723);
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        border: 5px solid rgba(28, 28, 28, 0.723);
+    }
+}
+@media only screen and (max-width: 667px) {
+    .outter_box {
+        margin-top: var(--marginTop);
+        height: 100%;
+        padding: 2rem;
+    }
+    .profile {
+        flex-direction: column-reverse;
+        height: auto; 
+        padding: 0;
+    }
+    .caption {
+        margin: 0;
+        padding-left:0.8rem ;
+        margin-bottom: 1rem; 
+        margin-top: 3rem;
+    }
+    .caption h2{
+        font-size: 1.7rem;
+    }
+    .shape{
+        margin-top: 2rem;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+    }
+    .shape img{
+        height: 200px;
+    }
+    .tech_stack {
+        width: 100%;
+        margin-left: 0; 
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1160px) {
+    .profile{
+        padding: 0 1rem;
+    }
+    .caption{
+        font-size: 3rem;
+        margin-right: 2rem;
+    }
+}
