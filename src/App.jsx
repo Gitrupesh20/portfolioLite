@@ -31,8 +31,8 @@ function App() {
 
 
       <Project/>
-      <About />
-     {/*  <Footer /> */}
+     {/* <About />
+       <Footer /> */}
 {/*       <Routes>
         
         <Route path='/Work' element={<Project />} />
